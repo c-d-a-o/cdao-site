@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .faq-container {
+            display: flex;
+            flex-wrap: wrap;
+          }
+          
+          .faq-row {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+          }
+          
+          .faq-box {
+            flex-basis: calc(50% - 20px); /* Adjust for 2 boxes per row on smaller screens */
+            padding: 20px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+          }
+          
+          .faq-box:not(:last-child) {
+            margin-right: 20px;
+          }
+          
+          .faq-box h3 {
+            margin-top: 0;
+          }
+          
+          .faq-box p {
+            margin-bottom: 0;
+          }
+          
+          @media screen and (max-width: 767px) {
+            /* Adjust for 1 box per row on smaller screens */
+            .faq-box {
+              flex-basis: 100%;
+            }
+          
+            .faq-box:not(:last-child) {
+              margin-right: 0;
+            }
+          }
+          
+    </style>
+</head>
+<body>
+    <div class="faq-container">
+        <div class="faq-row">
+          <div class="faq-box">
+            <h3>Question 1</h3>
+            <p>Answer 1</p>
+          </div>
+          <div class="faq-box">
+            <h3>Question 2</h3>
+            <p>Answer 2</p>
+          </div>
+          <div class="faq-box">
+            <h3>Question 3</h3>
+            <p>Answer 3</p>
+          </div>
+        </div>
+        <div class="faq-row">
+          <div class="faq-box">
+            <h3>Question 4</h3>
+            <p>Answer 4</p>
+          </div>
+          <div class="faq-box">
+            <h3>Question 5</h3>
+            <p>Answer 5</p>
+          </div>
+          <div class="faq-box">
+            <h3>Question 6</h3>
+            <p>Answer 6</p>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>
