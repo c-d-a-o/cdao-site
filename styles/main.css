@@ -37,8 +37,8 @@ body {
   display: flex;
   height: 75px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
   color: white;
   padding: 0 60px;
   z-index: 9;
@@ -303,30 +303,6 @@ body {
   color: #1f22a8;
 }
 
-/* ::::::::::::::::::::::::::::::::::::carbon dao:::::::::::::::::::::::::::::::::::::: */
-
-.carbon-neutral-dao {
-  display: flex;
-  margin-top: 40px;
-}
-
-.carbon-dao-text {
-  flex: 1;
-}
-
-.carbon-dao-text h2 {
-  margin-top: 0;
-}
-
-.carbon-dao-image {
-  flex: 1;
-  text-align: right;
-}
-
-.carbon-dao-image img {
-  max-width: 100%;
-  height: auto;
-}
 
 /* ::::::::::::::::::::::::::::::::::::faqs::::::::::::::::::::::::::::::::::::::::::: */
 
@@ -357,19 +333,16 @@ body {
 }
 .faq-box-icon{
   font-size: var(--fontSizes-4xl);
-  margin: 20px 0 20px 10px;
+  margin: 20px 0;
 }
-
 .faq-box:not(:last-child) {
   margin-right: 20px;
 }
-
 .faq-box h3 {
   margin-top: 0;
   font-size: var(--fontSizes-xl);
   word-spacing: 2.5px;
 }
-
 .faq-box p {
   margin-bottom: 0;
   font-size: var(--fontSizes-sm);
@@ -386,6 +359,55 @@ body {
   .faq-box:not(:last-child) {
     margin-right: 0;
   }
+}
+
+/* ::::::::::::::::::::::::::::::::::::carbon dao:::::::::::::::::::::::::::::::::::::: */
+
+.carbon-neutral-dao {
+  display: flex;
+  height: 500px;
+  width: 100%;
+  color: black;
+  background: radial-gradient(
+    circle at 25% -25%,
+    #bed99d,
+    #ffffff 50%
+  );
+  /* color: white;
+  background: radial-gradient(
+    circle at 25% -25%,
+    #05910f,
+    #000000 50%
+  ); */
+}
+.carbon-neutral-dao > div{
+  display: flex;
+  width: 50%;
+  flex-flow: column;
+  padding: 25px 60px;
+  justify-content: center;
+  z-index: 1;
+}
+.carbon-dao-text h2 {
+  margin-top: 0;
+  font-size: var(--fontSizes-4xl);
+  font-family: var(--font-heading);
+}
+.carbon-dao-text p{
+  font-size: var(--fontSizes-md);
+  line-height: 1.5em;
+}
+
+.carbon-dao-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.carbon-dao-image img {
+  max-width: 400px;
+  height: auto;
 }
 
 /* ::::::::::::::::::::::::::::::::::::footer::::::::::::::::::::::::::::::::::::::::::: */
@@ -439,17 +461,17 @@ body {
   font-family: var(--font-heading);
   font-weight: bold;
   color: #f7fafc;
-  margin: 0 0 7.5px;
+  margin: 0 0 7.5px 0;
 }
 .foot-notes .org-desc{
   font-size: var(--fontSizes-xl);
   color: #e5e5e5;
-  margin: 2.5px;
+  margin: 2.5px 0;
 }
 .foot-notes .org-contact{
   font-size: var(--fontSizes-sm);
   color: #e5e5e5;
-  margin: 5px;
+  margin: 5px 0;
 }
 .foot-notes .org-rights{
   font-size: var(--fontSizes-sm);
