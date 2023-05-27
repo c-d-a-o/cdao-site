@@ -12,7 +12,6 @@
     ></script>
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/main-mobile.css" />
-    <link rel="preload" href="res/backdrop/main-body-bg.mp4" as="video" />
   </head>
   <body>
 
@@ -36,7 +35,8 @@
 
     <div class="main-body">
     <video autoplay muted loop>
-        <source src="res/backdrop/main-body-bg.mp4" type="video/mp4" />
+      <source src="res/backdrop/main-body-bg.mp4" type="video/mp4" media="(orientation: landscape)"/>
+      <source src="res/backdrop/main-mobile-body-bg.mp4" type="video/mp4" media="(orientation: potrait)"/>
     </video>
       <div class="main-body-objective">
         <div class="objective-title">CDAO</div>
