@@ -1,11 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Poppins&family=Wix+Madefor+Display&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@400;700&display=swap");
+:root {
+  --font-heading: "Montserrat", "Satoshi", sans-serif;
+  --font-body: "Satoshi", "Wix Madefor Display", sans-serif;
+  --fontSizes-xs: 0.75rem;
+  --fontSizes-sm: 0.875rem;
+  --fontSizes-md: 1rem;
+  --fontSizes-lg: 1.125rem;
+  --fontSizes-xl: 1.25rem;
+  --fontSizes-2xl: 1.5rem;
+  --fontSizes-4xl: 2.25rem;
+  --fontSizes-3xl: 1.875rem;
+  --fontSizes-5xl: 3rem;
+  --fontSizes-6xl: 3.75rem;
+  --fontSizes-7xl: 4.5rem;
+  --fontSizes-8xl: 6rem;
+  --fontSizes-9xl: 8rem;
+  scroll-behavior: smooth;
+}
 @media screen and (max-width: 768px) {
+
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+  }
+
   *{
     box-sizing: border-box;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
-  }
-  body{
-    margin: 0;
   }
 
   /* ::::::::::::::::::::::::::::::::::::nav-bar::::::::::::::::::::::::::::::::::::::::::: */
@@ -14,7 +37,7 @@
     box-sizing: border-box;
     position: fixed;
     display: flex;
-    height: 90px;
+    height: 75px;
     width: 100%;
     background-color: rgba(0, 0, 0);
     color: white;
@@ -66,7 +89,7 @@
     flex-wrap: wrap;
     background-color: rgba(0, 0, 0, 0.9);
     transition: transform 0.2s ease-in-out;
-    transform: translateY(calc(-100% - 90px));
+    transform: translateY(calc(-100% - 75px));
     z-index: -1 !important;
 }
   .nav-bar-items-active{

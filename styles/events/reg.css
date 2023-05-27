@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: #f2f2f2;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -50,4 +50,118 @@ body {
 
   button[type="submit"]:hover {
     background-color: #3e60e868;
-  }
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @font-face {
+    font-family: font;
+    src: url('Ponzi Hat.otf');
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ background: url('../../abstract-digital-grid-black-background.jpg');
+ background-size: 100%;
+ 
+
+}
+.cont{
+   
+    height: 640px;
+    width: 234px;
+    position: absolute;
+    top: 44px;
+    width: 1097px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    
+}
+.item{
+    
+    height: 484px;
+    width: 522px;
+    margin: 10px;
+    position: relative;
+    top: 25px;
+
+}
+#right form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+#right form .int{
+    font-family: font;
+    font-size: 16px;
+    position: relative;
+    top: 42px;
+    width: 430px;
+    height: 52px;
+    margin: 6px;
+    border-radius: 12px;
+    background-color: whitesmoke;
+
+}
+#right form #btn{
+    height: 49px;
+    width: 151px;
+    margin: 19px;
+    font-size: 19px;
+    box-shadow: 1px 1.5px aqua;
+
+}
+ .cont #image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.cont #image img{
+    height: 511px;
+    width: 494px;
+    animation: left 4s ease-in-out infinite alternate;
+}
+@keyframes left {
+    from{
+        rotate: 10deg;
+    }
+    to{
+        rotate: -10deg;
+    }
+    
+}
+h2{
+    font-family: font;
+    align-items: center;
+    position: absolute;
+    top: 38px;
+    color: azure;
+    z-index: 1;
+    font-size: 42px;
+}
+#right form #btn:hover{
+    background-color: black;
+    color: aqua;
+    
+}
