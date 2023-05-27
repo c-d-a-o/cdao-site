@@ -12,6 +12,7 @@
     ></script>
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/main-mobile.css" />
+    <link rel="preload" href="res/backdrop/main-body-bg.mp4" as="video" />
   </head>
   <body>
 
@@ -183,7 +184,7 @@
         <div class="foot-newsletter">
           <p class="foot-newsletter-title">Join newsletter.</p>
           <p class="foot-newsletter-desc">Get the latest news and updates from CDAO.</p>
-          <form class="foot-newsletter-form">
+          <form class="foot-newsletter-form" action="./newsletter/" method="get">
             <input type="email" name="email" placeholder="Your email" autocomplete="off" required>
             <button type="submit" name="submit"><i class="fa-solid fa-paper-plane"></i></button>
           </form>
