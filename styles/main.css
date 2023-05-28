@@ -52,6 +52,7 @@ body {
   color: white;
   padding: 0 60px;
   z-index: 9;
+  box-shadow: 0 2.5px 8px 0 rgb(0, 0, 0, 0.5);
 }
 .nav-bar-hamburger{
   display: none !important;

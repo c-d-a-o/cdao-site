@@ -44,6 +44,7 @@
     color: white;
     padding: 0 20px 0 20px;
     z-index: 9;
+    box-shadow: 0 0px 8px 0 rgb(0, 0, 0, 0.5);
   }
   .nav-bar > div {
     display: flex;
@@ -94,6 +95,7 @@
     transition: transform 0.2s ease-in-out;
     transform: translateY(calc(-100% - 75px));
     z-index: -1 !important;
+    box-shadow: 0 2px 8px 0 rgb(0, 0, 0, 0.5);
 }
   .nav-bar-items-active{
     transform: translateY(0) !important;

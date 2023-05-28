@@ -296,16 +296,17 @@ input:-webkit-autofill:active {
     border-bottom: 1.25px solid rgb(143, 37, 145);
   }
   .reg-item-form .submit-btn {
-    width: 120px;
-    height: 50px;
+    width: fit-content;
+    padding: 0 30px;
+    height: 60px;
     font-size: var(--fontSizes-md);
     color: #f7fafc;
     border-radius: 5px;
     background-color: rgb(143, 37, 145);
   }
   .reg-item-form .submit-btn:hover {
-    background-color: #f7fafc;
-    color: rgb(143, 37, 145);
+    background-color: rgb(143, 37, 145);
+    color: #f7fafc;
   }
   .reg-message p:first-of-type i{
     transform: scale(1.5);
