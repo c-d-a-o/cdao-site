@@ -2,6 +2,7 @@ const sliderPrevbtn = document.querySelector(".slider-prev");
 const sliderNextbtn = document.querySelector(".slider-next");
 const sliderViewContext = document.querySelector(".view-event-cards");
 const navBarItems = document.querySelector(".nav-bar-items");
+const navBarHam = document.querySelector(".nav-bar-hamburger i");
 
 sliderNextbtn.addEventListener("click", () => {
     sliderViewContext.scrollLeft += 2000;
@@ -17,5 +18,6 @@ document.querySelector(".nav-bar-hamburger i").addEventListener("click", (e) => 
 document.querySelectorAll(".item-link a").forEach((item) => {
     item.addEventListener("click", () => {
         navBarItems.classList.toggle("nav-bar-items-active");
+        navBarHam.classList.toggle("nav-bar-hamburger-active");
     })
 });

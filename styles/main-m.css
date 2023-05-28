@@ -277,7 +277,11 @@
     flex-wrap: wrap;
   }
   .event-card-1 {
-    background: radial-gradient(circle at 25% 50%, #1f21a8d0, #040411d0 60%);
+    background: radial-gradient(
+      circle at 25% 35%,
+      #1f21a8a0,
+      #040411d0 70%
+    );
   }
   .event-thumbnail {
     display: flex;
@@ -379,6 +383,7 @@
     font-size: var(--fontSizes-xl);
     word-spacing: 2.5px;
   }.faq-box i{
+    margin: 10px 5px 5px;
     font-size: var(--fontSizes-2xl);
   }
   .faq-box p {
