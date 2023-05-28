@@ -97,9 +97,9 @@ document.getElementById("branch").addEventListener("input", function(event) {
 const msgSuccess = `
   <div class="reg-message">
   <p><i class="fa-solid fa-circle-check"></i> Registration Successful!</p>
-  <p> Join Our <a href="https://chat.whatsapp.com/GkYvShsxSdpJrhmw3xJljv">WhatsApp Group</a><i class="fa-solid fa-link"></i></p>
-  <p> Join Our <a href="https://discord.gg/GC3qcUvkA5">Discord</a><i class="fa-solid fa-link"></i></p>
-  <p> Join Our <a href="https://t.me/+G3mxLby_mYEyOTll">Telegram</a><i class="fa-solid fa-link"></i></p>
+  <p> Join Our <a href="https://chat.whatsapp.com/GkYvShsxSdpJrhmw3xJljv" target="_blank">WhatsApp Group</a><i class="fa-solid fa-link"></i></p>
+  <p> Join Our <a href="https://discord.gg/GC3qcUvkA5" target="_blank">Discord</a><i class="fa-solid fa-link"></i></p>
+  <p> Join Our <a href="https://t.me/+G3mxLby_mYEyOTll" target="_blank">Telegram</a><i class="fa-solid fa-link"></i></p>
   </div>
 `;
 const msgFailure = `
@@ -111,9 +111,9 @@ const msgFailure = `
 const msgAlreadyDone = `
   <div class="reg-message">
   <p><i class="fa-solid fa-circle-exclamation"></i> You've already registered!</p>
-  <p> Our <a href="https://chat.whatsapp.com/GkYvShsxSdpJrhmw3xJljv">WhatsApp Group</a><i class="fa-solid fa-link"></i></p>
-  <p> Our <a href="https://discord.gg/GC3qcUvkA5">Discord</a><i class="fa-solid fa-link"></i></p>
-  <p> Our <a href="https://t.me/+G3mxLby_mYEyOTll">Telegram</a><i class="fa-solid fa-link"></i></p>
+  <p> Our <a href="https://chat.whatsapp.com/GkYvShsxSdpJrhmw3xJljv" target="_blank">WhatsApp Group</a><i class="fa-solid fa-link"></i></p>
+  <p> Our <a href="https://discord.gg/GC3qcUvkA5" target="_blank">Discord</a><i class="fa-solid fa-link"></i></p>
+  <p> Our <a href="https://t.me/+G3mxLby_mYEyOTll" target="_blank">Telegram</a><i class="fa-solid fa-link"></i></p>
   </div>
 `;
 const warnRoll = `
