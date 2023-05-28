@@ -94,8 +94,8 @@ document.getElementById("branch").addEventListener("input", function(event) {
 const msgSuccess = `
   <div class="reg-message">
   <p><i class="fa-solid fa-circle-check"></i> Registration Successful!</p>
-  <p>Join Our WhatsApp Group: <a href=""></a></p>
-  <p>Join Our Discord: <a href=""></a></p>
+  <p> Join Our <a href="">WhatsApp Group</a><i class="fa-solid fa-link"></i></p>
+  <p> Join Our <a href="https://discord.gg/GC3qcUvkA5">Discord</a><i class="fa-solid fa-link"></i></p>
   </div>
 `;
 const msgFailure = `

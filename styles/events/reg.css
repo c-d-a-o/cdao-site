@@ -60,7 +60,7 @@ body {
 .reg-title h1{
   display: block;
   font-size: var(--fontSizes-4xl);
-  font-family: var(--font-heading);
+  font-family: var(--font-body);
   margin: 10px 0;
   font-weight: bold;
 }
@@ -169,30 +169,36 @@ body {
 
 .reg-message{
   min-height: 300px;
+  height: fit-content;
   padding: 20px;
 }
 .reg-message p:first-of-type{
   font-size: var(--fontSizes-xl);
   color: #f7fafc;
-  margin: 50px 0;
+  margin: 25px 0;
 }
 .reg-message p{
   font-size: var(--fontSizes-md);
   color: #f7fafc;
+  word-wrap: break-word;
 }
 .reg-message p a{
-  text-decoration: none;
+  color: #f7fafc;
+  text-underline-offset: 5px;
 }
 .reg-message p a:hover{
   text-decoration: underline;
 }
+.reg-message p:first-of-type i{
+  transform: scale(1.8);
+  padding: 0 10px 0 0;
+}
 .reg-message i{
   /* color: rgb(216, 64, 218); */
   color: #f7fafc;
-  transform: scale(1.5);
-  padding: 0 10px 0 0;
+  transform: scale(1);
+  padding: 0 10px;
 }
-
 .reg-warning{
   min-height: fit-content;
   padding: 10px 20px;
@@ -234,18 +240,18 @@ input:-webkit-autofill:active {
     padding: 50px 20px 25px;
   }
   .reg-title h1{
-    font-size: var(--fontSizes-2xl);
+    font-size: var(--fontSizes-3xl);
     margin: 20px 0;
   }
   .reg-title h2{
-    font-size: var(--fontSizes-lg);
+    font-size: var(--fontSizes-xl);
     margin: 0 5px;
   }
   .reg-title img{
-    vertical-align: text-bottom;
-    max-height: 60px;
-    padding: 5px;
-    margin: 0 20px 0 0;
+    vertical-align: baseline;
+    max-height: 55px;
+    padding: 0px;
+    margin: 0 15px 0 0;
   }
   .reg-flex{
     flex-flow: column wrap;
@@ -297,5 +303,8 @@ input:-webkit-autofill:active {
   .reg-item-form .submit-btn:hover {
     background-color: #f7fafc;
     color: rgb(143, 37, 145);
+  }
+  .reg-message p:first-of-type i{
+    transform: scale(1.5);
   }
 }
