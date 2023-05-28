@@ -30,18 +30,18 @@ form.addEventListener("submit", function(event) {
 
   //required fields: name, branch, id, phoneNo, email: done!
   if (id.length != 8 || isNaN(id)) { 
-    alert("Aw Snap! invalid roll no.");
+    displayWarning(warnRoll);
     return;
   }
   if (phoneNo.length != 10 || isNaN(phoneNo)) {
-    alert("Aw Snap! invalid phone no.");
+    displayWarning(warnPhone);
     return;
   }
 
   get(ref(rtDatabase, `users/${id}`))
   .then((snapshot) => {
     if (snapshot.exists()) {
-      alert("Whoop! You already registered!");
+      displayMessage(msgAlreadyDone);
       form.reset();
     } else {
 
@@ -57,7 +57,7 @@ form.addEventListener("submit", function(event) {
         .then(() => {
           setDoc(doc(firestore, 'users', id), newData)
             .then(() =>{
-              alert("Registration Successful!")
+              displayMessage(msgSuccess);
               form.reset();
             })
         })
@@ -69,12 +69,12 @@ form.addEventListener("submit", function(event) {
               remove(ref(rtDatabase, `users/${id}`))
             }
           });
-          alert("Registration failed! Please try again.")
+          displayMessage(msgFailure);
         });
     }
   })
   .catch((error) => {
-    alert("Oops! Please try after sometimes.")
+    displayMessage(msgFailure);
     console.error(error);
   });
 });
@@ -90,3 +90,37 @@ document.getElementById("name").addEventListener("input", function(event) {
 document.getElementById("branch").addEventListener("input", function(event) {
   event.target.value = event.target.value.toUpperCase();
 });
+
+const msgSuccess = `
+  <div class="reg-message">
+  <p><i class="fa-solid fa-circle-check"></i> Registration Successful!</p>
+  <p>Join Our WhatsApp Group: <a href=""></a></p>
+  <p>Join Our Discord: <a href=""></a></p>
+  </div>
+`;
+const msgFailure = `
+  <div class="reg-message">
+  <p><i class="fa-solid fa-circle-xmark"></i> Registration failed!</p>
+  <p>Sorry for the inconvenience. We would be back, please try later.</p>
+  </div>
+`;
+const msgAlreadyDone = `
+  <div class="reg-message">
+  <p><i class="fa-solid fa-circle-exclamation"></i> You've already registered!</p>
+  </div>
+`;
+const warnRoll = `
+<p><i class="fa-solid fa-circle-exclamation"></i> Aw Snap! Invalid roll no.</p>
+`;
+const warnPhone = `
+<p><i class="fa-solid fa-circle-exclamation"></i> Aw Snap! Invalid phone no.</p>
+`;
+
+function displayMessage(message) {
+  const messageElement = document.querySelector(".reg-item-form");
+  messageElement.innerHTML = message;
+}
+function displayWarning(message) {
+  const messageElement = document.querySelector(".reg-warning");
+  messageElement.innerHTML = message;
+}

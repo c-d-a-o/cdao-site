@@ -25,6 +25,7 @@
   background-color: rgba(255, 255, 255);
 }
 *{
+  /* outline: 1px solid red; */
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
@@ -88,6 +89,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .reg-item-img img {
   max-width: 1000px;
@@ -163,6 +165,46 @@ body {
 .reg-item-form .submit-btn:hover {
   background-color: #f7fafc;
   color: rgb(172, 11, 175);
+}
+
+.reg-message{
+  min-height: 300px;
+  padding: 20px;
+}
+.reg-message p:first-of-type{
+  font-size: var(--fontSizes-xl);
+  color: #f7fafc;
+  margin: 50px 0;
+}
+.reg-message p{
+  font-size: var(--fontSizes-md);
+  color: #f7fafc;
+}
+.reg-message p a{
+  text-decoration: none;
+}
+.reg-message p a:hover{
+  text-decoration: underline;
+}
+.reg-message i{
+  /* color: rgb(216, 64, 218); */
+  color: #f7fafc;
+  transform: scale(1.5);
+  padding: 0 10px 0 0;
+}
+
+.reg-warning{
+  min-height: fit-content;
+  padding: 10px 20px;
+}
+.reg-warning p{
+  font-size: var(--fontSizes-md);
+  color: #f7fafc;
+}
+.reg-warning i{
+  color: #f7fafc;
+  transform: scale(1.5);
+  padding: 0 10px 0 0;
 }
 
 input:-webkit-autofill,
