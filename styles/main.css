@@ -46,6 +46,7 @@ body {
   display: flex;
   height: 75px;
   width: 100%;
+  background-color: transparent;
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(8px);
   color: white;
@@ -67,9 +68,10 @@ body {
 }
 .nav-bar-logo a {
   width: fit-content;
-  height: 70%;
+  height: 75%;
 }
 .nav-bar-logo img {
+  min-height: 50px;
   width: auto;
   height: 100%;
 }
@@ -301,6 +303,7 @@ body {
   line-height: 50px;
   text-decoration: none;
   bottom: 50px;
+  border-radius: 2.5px;
   z-index: 1;
   font-size: var(--fontSizes-lg);
 }
@@ -334,21 +337,28 @@ body {
   flex-wrap: wrap;
 }
 .faq-box {
-  min-height: 200px;
+  cursor: default;
+  min-height: 250px;
   height: fit-content;
   flex-basis: calc(50% - 12.5px);
   padding: 50px 20px 20px;
   background-color: #f5f5f5;
   margin-bottom: 25px;
+  box-shadow: 0 5px 5px 0 rgb(224, 224, 224);
 }
-.faq-box-icon{
-  font-size: var(--fontSizes-4xl);
-  margin: 0 0 20px 0;
+.faq-box:hover{
+  transform: scale(1.02);
+  transition: 0.25s ease-in-out;
+  box-shadow: 0 10px 10px 0 rgb(193, 193, 193);
 }
 .faq-box h3 {
   margin-top: 0;
   font-size: var(--fontSizes-xl);
   word-spacing: 2.5px;
+}
+.faq-box i{
+  font-size: var(--fontSizes-2xl);
+  margin: 5px 5px 5px 0;
 }
 .faq-box p {
   margin-bottom: 0;
@@ -412,7 +422,7 @@ body {
   display: flex;
   height: 80px;
   width: 100%;
-  background-color: #212121;
+  background-color: #1a1a1a;
   /* background: linear-gradient(109.6deg, rgb(12, 12, 12) 32.4%, #382e2f 98.8%); */
   color: white;
   align-items: center;
