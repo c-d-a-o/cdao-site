@@ -25,9 +25,8 @@
   background-color: rgba(255, 255, 255);
 }
 *{
-  /* outline: 1px solid red; */
   box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
+  user-select: none;
 }
 body {
   background: url("../../res/backdrop/3d-abstract-network-communications-background-with-plexus-design2.jpg");
