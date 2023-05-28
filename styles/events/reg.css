@@ -157,7 +157,7 @@ body {
   outline: none;
   font-size: var(--fontSizes-md);
   font-family: var(--font-heading);
-  /* box-shadow: 0px 2.5px 5px rgb(128, 80, 128); */
+  border-radius: 2.5px;
   color: #f7fafc;
   background-color: rgb(172, 11, 175);
   cursor: pointer;
@@ -166,7 +166,32 @@ body {
   background-color: #f7fafc;
   color: rgb(172, 11, 175);
 }
-
+.submit-btn-loading{
+  background-color: transparent !important;
+  color: rgb(172, 11, 175);
+}
+.loader-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  margin: 10px 0;
+}
+.submit-btn-loading .mechanics{
+  width: 30px;
+  height: 30px;
+  border: 5px solid rgb(172, 11, 175);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: rotate-on-load 1s infinite linear;
+}
+@keyframes rotate-on-load {
+  to{
+      transform: rotate(360deg);
+  }
+}
 .reg-message{
   min-height: 300px;
   height: fit-content;
@@ -296,17 +321,22 @@ input:-webkit-autofill:active {
     border-bottom: 1.25px solid rgb(143, 37, 145);
   }
   .reg-item-form .submit-btn {
-    width: fit-content;
-    padding: 0 30px;
-    height: 60px;
     font-size: var(--fontSizes-md);
     color: #f7fafc;
-    border-radius: 5px;
-    background-color: rgb(143, 37, 145);
+    border-radius: 2.5px;
+    background-color: rgb(158, 35, 160);
   }
   .reg-item-form .submit-btn:hover {
-    background-color: rgb(143, 37, 145);
+    background-color: rgb(158, 35, 160);
     color: #f7fafc;
+  }
+  .submit-btn-loading .mechanics{
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgb(158, 35, 160);
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: rotate-on-load 1s infinite linear;
   }
   .reg-message p:first-of-type i{
     transform: scale(1.5);

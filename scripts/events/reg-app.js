@@ -21,7 +21,7 @@ const form = document.getElementById("registration");
 
 form.addEventListener("submit", function(event) {
   event.preventDefault();
-
+  const button = document.querySelector(".submit-btn");
   const name = toTitleCase(document.getElementById("name").value.trim());
   const branch = document.getElementById("branch").value.toUpperCase();
   const id = document.getElementById("rollNo").value;
@@ -37,7 +37,10 @@ form.addEventListener("submit", function(event) {
     displayWarning(warnPhone);
     return;
   }
-
+  button.classList.toggle("submit-btn-loading");
+  button.innerHTML = `<div class="loader-wrapper"><div class="mechanics"></div></div>`;
+  button.disabled = true;
+  
   get(ref(rtDatabase, `users/${id}`))
   .then((snapshot) => {
     if (snapshot.exists()) {
