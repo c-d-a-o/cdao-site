@@ -1,61 +1,52 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-<link rel="stylesheet" type="text/css" href="../../styles/events/reg.css">
-</head>
-<body>
-<form id="registration">
-    <label for="name">Name:</label>
-    <input type="text" class="form-control" id="name" required>
-
-    <label for="branch">Branch: </label>
-    <input type="text" id="branch" required>
-
-    <label for="rollNo">Roll No:</label>
-    <input type="text" id="rollNo" required>
-
-    <label for ="phoneNo">Phone No:</label>
-    <input type="tel" id="phoneNo" required>
- 
-    <label for="email">Email:</label>
-    <input type="email" id="email" required>
-
-    <button type="submit">Sign Up</button>
-</form>
-
-<script src="../../scripts/events/reg-app.js" type="module"></script>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../../styles/events/reg.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration | Web3 Storm</title>
+    <link rel="shortcut icon" href="../../res/images/logo/cdao-logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../../styles/events/reg.css">
+  </head>
 <body>
-  <h2>SIGN UP</h2>
-  <div class="cont">
-   
-    <div class="item" id="image">
-    <img src="../../reg.png" alt="">
+  <div class="reg-container">
+    <div class="reg-title">
+      <img src="../../res/images/logo/cdao-logo.png" alt="cdao-logo">
+      <h1>Registration form</h1>
+      <h2>CDAO x Crewsphere: ICP India Hub | Web3 Storm</h2>
     </div>
-    <div class="item" id="right">
+    <div class="reg-flex">
+      <div class="reg-item reg-item-img">
+        <img src="../../res/images/abstract-vector-violet-colorful-mesh-sphere-dark-background.png" alt="">
+      </div>
 
-      <form action="">
-      <input type="text" class="int" id="name" placeholder="Name">
-      <input type="text" class="int" placeholder="Branch" >
-      <input type="text" class="int" placeholder="Roll no." >
-      <input type="text" class="int" placeholder="Phone" >
-      <input type="email" class="int" placeholder="Email" >
-      <button type="button" class="int" id="btn">SIGN UP</button>
-      </form>
-     
+      <div class="reg-item reg-item-form">
+        <form id="registration">
+        <div class="wrap-reg-input">
+          <label for="name">Name*</label>
+          <input type="text" id="name" placeholder="Your Good Name" required>
+        </div>
+        <div class="wrap-reg-input">
+          <label for="branch">Branch* </label>
+          <input type="text" id="branch" placeholder="Your Branch Initials (e.g. CSE)" required>
+        </div>
+        <div class="wrap-reg-input">
+          <label for="rollNo">Roll No*</label>
+          <input type="text" id="rollNo" placeholder="Your Roll No." required>
+        </div>
+        <div class="wrap-reg-input">
+          <label for ="phoneNo">Phone No*</label>
+          <input type="text" id="phoneNo" placeholder="Your WhatsApp No." required>
+        </div>
+        <div class="wrap-reg-input">
+          <label for="email">Email*</label>
+          <input type="email" id="email" placeholder="Your Email Address" required>
+        </div>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
     </div>
-
   </div>
+<script src="../../scripts/events/reg-app.js" type="module"></script>
 </body>
 </html>

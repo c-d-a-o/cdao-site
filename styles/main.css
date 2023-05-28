@@ -19,6 +19,15 @@
   --fontSizes-9xl: 8rem;
   scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+  background-color: rgb(0, 0, 0);
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255);
+}
+
 body {
   margin: 0;
   font-family: var(--font-body);
