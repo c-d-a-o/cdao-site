@@ -1,5 +1,5 @@
-const sliderPrevbtn = document.querySelector(".slider-prev");
-const sliderNextbtn = document.querySelector(".slider-next");
+const sliderPrevbtn = document.querySelector(".slider-prev i");
+const sliderNextbtn = document.querySelector(".slider-next i");
 const sliderViewContext = document.querySelector(".view-event-cards");
 const navBarItems = document.querySelector(".nav-bar-items");
 const navBarHam = document.querySelector(".nav-bar-hamburger i");
