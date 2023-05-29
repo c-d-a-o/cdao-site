@@ -297,7 +297,6 @@
     width: -webkit-fill-available;
     padding: 25px 10px;
     overflow: scroll;
-    margin-bottom: 100px;
   }
   .event-details::-webkit-scrollbar {
     display: none;
@@ -308,29 +307,40 @@
     border-radius: 5px 0 0 5px;
   }
   .event-details h3 {
-    margin: 0;
     font-size: var(--fontSizes-2xl);
     font-weight: 700;
-
+    margin: 0;
+    margin-bottom: 20px;
   }
-  .event-details p {
-    margin-bottom: 0px;
+  .event-details p{
+    margin: 0px;
+    margin-bottom: 5px;
     font-size: var(--fontSizes-md);
     font-weight: bold;
   }
-  .event-details p:last-of-type {
-    margin-bottom: 0px;
+  .event-details p:last-of-type{
+    margin-bottom: 20px;
+  }
+  .event-details-desc p{
     font-size: var(--fontSizes-sm);
     font-weight: normal;
+    margin-bottom: 10px;
+    /* word-spacing: 2px; */
+    /* line-height: 1.25em; */
+  }
+  .event-details-desc p:last-of-type{
+    margin: 0;
+  }
+  .hastags {
+    display: none;
   }
   .register-button {
-    position: fixed;
     padding: 0 30px;
+    margin-top: 20px;
     height: 60px;
     width: fit-content;
     line-height: 60px;
     text-decoration: none;
-    bottom: 50px;
     z-index: 1;
     border-radius: 5px;
     font-size: var(--fontSizes-lg);

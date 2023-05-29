@@ -269,9 +269,9 @@ body {
   display: flex;
   flex-flow: column;
   width: -webkit-fill-available;
-  padding: 25px 0 0 40px;
-  overflow: scroll;
-  margin-bottom: 100px;
+  height: 100%;
+  padding: 25px 10px 25px 40px;
+  overflow: hidden;
 }
 .event-details::-webkit-scrollbar {
   display: none;
@@ -282,31 +282,53 @@ body {
   border-radius: 5px 0 0 5px;
 }
 .event-details h3 {
-  margin-top: 0;
   font-size: var(--fontSizes-4xl);
   font-weight: 700;
+  margin: 0;
+  margin-bottom: 25px;
 }
-.event-details p {
-  margin-bottom: 0px;
+.event-details p{
+  margin: 0px;
+  margin-bottom: 10px;
   font-size: var(--fontSizes-xl);
   font-weight: bold;
 }
-.event-details p:last-of-type {
-  margin-bottom: 0px;
+.event-details p:last-of-type{
+  margin-bottom: 25px;
+}
+.event-details-desc p{
   font-size: var(--fontSizes-md);
   font-weight: normal;
+  margin-bottom: 10px;
+}
+.event-details-desc p:last-of-type{
+  margin: 0;
+}
+.hastags {
+  cursor: pointer;
+  font-size: var(--fontSizes-sm);
+  padding: 2.5px 10px;
+  margin-right: 2.5px;
+  line-height: 2.1em;
+  font-style: normal;
+  border-radius: 50px;;
+  border: 1px solid #ffffff;
+}
+.event-card-1 .hastags:hover{
+  background-color: #ffffff;
+  color: #1f22a8;
 }
 .register-button {
-  position: fixed;
+  position: absolute;
   padding: 0 25px;
   height: 50px;
   width: fit-content;
   line-height: 50px;
+  font-size: var(--fontSizes-lg);
   text-decoration: none;
-  bottom: 50px;
+  bottom: 25px !important;
   border-radius: 2.5px;
   z-index: 1;
-  font-size: var(--fontSizes-lg);
 }
 .event-card-1 .register-button{
   background-color: #1f22a8;
