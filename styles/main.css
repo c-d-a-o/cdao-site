@@ -22,7 +22,8 @@
 
 ::-webkit-scrollbar {
   background-color: rgb(0, 0, 0);
-  width: 5px;
+  width: 2.5px;
+  border-radius: 2.5px;
 }
 ::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255);
@@ -35,7 +36,6 @@ body {
 
 *{
     box-sizing: border-box;
-    /* outline: 1px solid red; */
 }
 
 /* ::::::::::::::::::::::::::::::::::::nav-bar::::::::::::::::::::::::::::::::::::::::::: */
