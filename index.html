@@ -186,13 +186,15 @@
         <div class="foot-newsletter">
           <p class="foot-newsletter-title">Join newsletter.</p>
           <p class="foot-newsletter-desc">Get the latest news and updates from CDAO.</p>
-          <form class="foot-newsletter-form" action="./newsletter/" method="get">
+          <form class="foot-newsletter-form" id="newsletter-form">
             <input type="email" name="email" placeholder="Your email" autocomplete="off" required>
             <button type="submit" name="submit" aria-label="Send"><i class="fa-solid fa-paper-plane"></i></button>
           </form>
+          <p class="foot-newsletter-msg"></p>
         </div>
       </div>
     </div>
     <script src="scripts/main-app.js"></script>
+    <script src="scripts/newsletter/app.js"></script>
   </body>
 </html>

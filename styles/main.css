@@ -554,3 +554,10 @@ img, video {
 .foot-newsletter-form button:hover{
   background-color: #424242;
 }
+.foot-newsletter-msg{
+  color: #ff7777;
+}
+.foot-newsletter-msg i{
+  font-size: var(--fontSizes-xl);
+  padding: 0 10px 0 0;
+}

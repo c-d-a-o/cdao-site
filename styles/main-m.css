@@ -360,10 +360,6 @@
     background-color: #ffffff;
     color: #1f22a8;
   }
-  .event-card-1 .register-button:hover {
-    background-color: #1f22a8;
-    color: #ffffff;
-  }
 
   /* ::::::::::::::::::::::::::::::::::::faqs::::::::::::::::::::::::::::::::::::::::::: */
 
@@ -562,7 +558,17 @@
     cursor: pointer;
     font-size: var(--fontSizes-sm);
   }
-  .foot-newsletter-form button:hover {
-    background-color: unset;
+  .foot-newsletter-form button:active {
+    background-color: #424242;
   }
+}
+.foot-newsletter-msg{
+  color: #ff7777;
+}
+.foot-newsletter-msg i{
+  font-size: var(--fontSizes-xl);
+  padding: 0 10px 0 0;
+}
+.foot-newsletter-msg span{
+  display: none;
 }
