@@ -19,7 +19,6 @@
   --fontSizes-9xl: 8rem;
   scroll-behavior: smooth;
 }
-
 ::-webkit-scrollbar {
   background-color: rgb(0, 0, 0);
   width: 2.5px;
@@ -28,14 +27,22 @@
 ::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255);
 }
-
+*{
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none;
+}
 body {
   margin: 0;
   font-family: var(--font-body);
 }
-
-*{
-    box-sizing: border-box;
+img, video {  
+  pointer-events: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 /* ::::::::::::::::::::::::::::::::::::nav-bar::::::::::::::::::::::::::::::::::::::::::: */
