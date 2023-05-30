@@ -19,7 +19,8 @@
 }
 ::-webkit-scrollbar {
   background-color: rgb(0, 0, 0);
-  width: 5px;
+  width: 2.5px;
+  border-radius: 2.5px;
 }
 ::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255);
@@ -154,7 +155,7 @@ img {
   color: rgb(151, 151, 151);
 }
 .reg-item-form input:focus{
-  border-bottom: 1.25px solid rgb(229, 28, 232);
+  border-bottom: 1px solid rgb(229, 28, 232);
 }
 .reg-item-form .submit-btn {
   height: 50px;
@@ -325,7 +326,7 @@ input:-webkit-autofill:active {
     margin: 10px 0;
   }
   .reg-item-form input:focus{
-    border-bottom: 1.25px solid rgb(143, 37, 145);
+    border-bottom: 1px solid rgb(143, 37, 145);
   }
   .reg-item-form .submit-btn {
     font-size: var(--fontSizes-md);
