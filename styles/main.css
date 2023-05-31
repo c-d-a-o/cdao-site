@@ -362,6 +362,11 @@ a:hover::before {
   border-radius: 2.5px;
   z-index: 1;
 }
+.register-closed{
+  background-color: transparent !important;
+  color: #ffffff !important;
+  pointer-events: none !important;
+}
 .event-card-1 .register-button{
   background-color: #1f22a8;
   color: #ffffff;

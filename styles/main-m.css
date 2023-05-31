@@ -352,6 +352,11 @@
     border-radius: 5px;
     font-size: var(--fontSizes-lg);
   }
+  .register-closed{
+    background-color: transparent !important;
+    color: #ffffff !important;
+    pointer-events: none !important;
+  }
   .event-card-1 .register-button {
     background-color: #1f22a8;
     color: #ffffff;
