@@ -105,7 +105,7 @@ const msgSuccess = `
 const msgFailure = `
   <div class="reg-message">
   <p><i class="fa-solid fa-circle-xmark"></i> Registration failed!</p>
-  <p>Sorry for the inconvenience. We would be back, please try later.</p>
+  <p>Registrations are closed now. Sorry for your inconvenience.</p>
   </div>
 `;
 const msgAlreadyDone = `
