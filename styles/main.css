@@ -367,14 +367,22 @@ a:hover::before {
   color: #ffffff !important;
   pointer-events: none !important;
 }
+.feedback-button{
+  background-color: #ffffff !important;
+  color: #1f22a8 !important;
+}
+.event-card-1 .feedback-button:hover{
+  background-color: #1f22a8 !important;
+  color: #ffffff !important;
+}
 .event-card-1 .register-button{
   background-color: #1f22a8;
   color: #ffffff;
 }
-.event-card-1 .register-button:hover {
+/* .event-card-1 .register-button:hover {
   background-color: #ffffff;
   color: #1f22a8;
-}
+} */
 
 /* ::::::::::::::::::::::::::::::::::::faqs::::::::::::::::::::::::::::::::::::::::::: */
 
