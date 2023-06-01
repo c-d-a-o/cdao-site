@@ -371,6 +371,9 @@ a:hover::before {
   background-color: #ffffff !important;
   color: #1f22a8 !important;
 }
+.feedback-button i{
+  padding-left: 10px;
+}
 .event-card-1 .feedback-button:hover{
   background-color: #1f22a8 !important;
   color: #ffffff !important;
