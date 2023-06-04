@@ -3,16 +3,7 @@ import { getFirestore, doc, setDoc } from 'https://www.gstatic.com/firebasejs/9.
 import { getDatabase, ref, set, get, remove } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js"
 
 //replace with your own firebase config!
-const app = initializeApp({
-  apiKey: "AIzaSyBiAuOErf5f6G3OpnYI0fP6fmwJXWV8Wzo",
-  authDomain: "cdao-fun.firebaseapp.com",
-  databaseURL: "https://cdao-fun-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "cdao-fun",
-  storageBucket: "cdao-fun.appspot.com",
-  messagingSenderId: "832916817154",
-  appId: "1:832916817154:web:acea1d9252db6eca522e1b",
-  measurementId: "G-2KRD0Z04P3"
-});
+const app = initializeApp({});
 
 const rtDatabase = getDatabase(app);
 const firestore = getFirestore(app);
