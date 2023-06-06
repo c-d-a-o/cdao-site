@@ -3,7 +3,7 @@
 @import url("https://api.fontshare.com/v2/css?f[]=satoshi@400;700&display=swap");
 :root {
   --font-heading: "Montserrat", "Satoshi", sans-serif;
-  --font-body: "Satoshi", "Wix Madefor Display", sans-serif;
+  --font-body: "Wix Madefor Display", sans-serif;
   --fontSizes-xs: 0.75rem;
   --fontSizes-sm: 0.875rem;
   --fontSizes-md: 1rem;
@@ -443,41 +443,99 @@ a:hover::before {
 
 .carbon-neutral-dao {
   display: flex;
-  height: 500px;
+  min-height: 100vh;
   width: 100%;
   color: black;
   background: radial-gradient(
     circle at 25% -25%,
-    #bed99d,
+    #b1d684,
     #ffffff 50%
-  );
+    );
+  }
+  .carbon-neutral-dao > div{
+    display: flex;
+    width: 50%;
+    flex-flow: column;
+    padding: 25px 60px;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .carbon-dao-text h2 {
+    font-size: var(--fontSizes-4xl);
+    font-family: var(--font-heading);
+    margin: 0;
+  }
+  .carbon-dao-text p{
+    font-size: var(--fontSizes-md);
+    line-height: 1.5em;
+  }
+.carbon-dao-text .event-1{
+  border-left: 5px solid #519300;
+  height: fit-content;
+  padding-left: 20px;
+  margin: 25px 0;
+  margin-left: 10px;
 }
-.carbon-neutral-dao > div{
-  display: flex;
-  width: 50%;
-  flex-flow: column;
-  padding: 25px 60px;
-  justify-content: center;
-  z-index: 1;
+.carbon-dao-text .event-1 h3{
+  font-size: var(--fontSizes-3xl);
+  margin: 10px 0 0;
 }
-.carbon-dao-text h2 {
-  margin-top: 0;
-  font-size: var(--fontSizes-4xl);
-  font-family: var(--font-heading);
+.carbon-dao-text .event-1 h3::before{
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border:5px solid #519300;
+  background-color: #ffffff;
+  left: calc(70px - 12.5px + 2.5px);
+  margin-top: 5px;
 }
-.carbon-dao-text p{
-  font-size: var(--fontSizes-md);
-  line-height: 1.5em;
+.carbon-dao-text .event-1 h3:hover:before{
+  border-color: #ffffff;
+  background-color: #519300;
+}
+.carbon-dao-text .event-1 h2{
+  font-size: var(--fontSizes-lg);
+  font-family: var(--font-body);
+  /* font-weight: normal; */
+  margin: 10px 0;
 }
 .carbon-dao-image {
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
 }
-.carbon-dao-image img {
-  max-width: 400px;
-  height: auto;
+.photo-stack {
+  display: flex;
+	width:100%;
+  height: 100%;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.photo {
+  display: flex;
+	position: absolute;
+}
+.img-landscape{
+  width: calc(50% - 120px);
+}
+.img-portrait{
+  width: calc(25%);
+}
+.photo img {
+  width: 100%;
+  margin: auto;
+  border: 5px solid #fefefe;
+	border-radius: 1px;
+	box-shadow: 0px 2px 5px rgba(0,50,50,0.45);
+	background: #FFF;
+  pointer-events: all;
 }
 
 /* ::::::::::::::::::::::::::::::::::::footer::::::::::::::::::::::::::::::::::::::::::: */
@@ -589,3 +647,4 @@ a:hover::before {
   font-size: var(--fontSizes-xl);
   padding: 0 10px 0 0;
 }
+
