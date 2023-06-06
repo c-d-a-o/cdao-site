@@ -51,14 +51,18 @@ img, video {
   box-sizing: border-box;
   position: fixed;
   display: flex;
-  height: 75px;
+  height: 120px;
   width: 100%;
   background-color: transparent;
-  background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(8px);
   color: white;
   padding: 0 60px;
   z-index: 9;
+  transition: 0.25s linear;
+}
+.nav-bar-scrolled {
+  height: 75px;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
   box-shadow: 0 2.5px 8px 0 rgb(0, 0, 0, 0.5);
 }
 .nav-bar-hamburger{
@@ -76,7 +80,7 @@ img, video {
 }
 .nav-bar-logo a {
   width: fit-content;
-  height: 75%;
+  height: 70%;
 }
 .nav-bar-logo img {
   min-height: 50px;

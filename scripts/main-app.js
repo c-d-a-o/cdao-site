@@ -1,3 +1,13 @@
+window.onscroll = () => {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop >= 50  || document.documentElement.scrollTop > 50) {
+    document.querySelector(".nav-bar").classList.add("nav-bar-scrolled");
+  } else {
+    document.querySelector(".nav-bar").classList.remove("nav-bar-scrolled");
+  }
+}
+
 const sliderPrevbtn = document.querySelector(".slider-prev i");
 const sliderNextbtn = document.querySelector(".slider-next i");
 const sliderViewContext = document.querySelector(".view-event-cards");
