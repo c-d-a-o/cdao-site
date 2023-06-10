@@ -51,16 +51,15 @@ img, video {
   box-sizing: border-box;
   position: fixed;
   display: flex;
-  height: 120px;
+  height: 75px;
   width: 100%;
   background-color: transparent;
   color: white;
   padding: 0 60px;
   z-index: 9;
-  transition: 0.25s linear;
+  transition: 0.125s linear;
 }
 .nav-bar-scrolled {
-  height: 75px;
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(8px);
   box-shadow: 0 2.5px 8px 0 rgb(0, 0, 0, 0.5);
@@ -497,10 +496,6 @@ a:hover::before {
   left: calc(70px - 12.5px + 2.5px);
   margin-top: 5px;
 }
-.carbon-dao-text .event-1 h3:hover:before{
-  border-color: #ffffff;
-  background-color: #519300;
-}
 .carbon-dao-text .event-1 h2{
   font-size: var(--fontSizes-lg);
   font-family: var(--font-body);
@@ -527,10 +522,10 @@ a:hover::before {
 	position: absolute;
 }
 .img-landscape{
-  width: calc(50% - 120px);
+  width: calc(50% - 150px);
 }
 .img-portrait{
-  width: calc(25%);
+  width: calc(25% - 50px);
 }
 .photo img {
   width: 100%;
