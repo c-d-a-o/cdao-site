@@ -70,3 +70,14 @@ function photoClickHandler() {
     photoElements[i].addEventListener('click', photoClickHandler);
   }
   
+function scrollToView(view){
+  let element = document.getElementById(view);
+  let headerOffset = 100;
+  let elementPosition = element.getBoundingClientRect().top;
+  let offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+  window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+  });
+}

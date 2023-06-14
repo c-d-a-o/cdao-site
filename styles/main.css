@@ -1,7 +1,8 @@
 /* font: Satoshi, fallback-font: Wix Madefor Display */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Poppins&family=Wix+Madefor+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Montserrat:wght@400;800&family=Poppins&family=Wix+Madefor+Display&display=swap");
 @import url("https://api.fontshare.com/v2/css?f[]=satoshi@400;700&display=swap");
 :root {
+  --font-title: "Montserrat", "Satoshi", sans-serif;
   --font-heading: "Montserrat", "Satoshi", sans-serif;
   --font-body: "Wix Madefor Display", sans-serif;
   --fontSizes-xs: 0.75rem;
@@ -15,8 +16,7 @@
   --fontSizes-5xl: 3rem;
   --fontSizes-6xl: 3.75rem;
   --fontSizes-7xl: 4.5rem;
-  --fontSizes-8xl: 6rem;
-  --fontSizes-9xl: 8rem;
+  --fontSizes-8xl: 5.75rem;
   scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
@@ -51,17 +51,18 @@ img, video {
   box-sizing: border-box;
   position: fixed;
   display: flex;
-  height: 75px;
+  height: 100px;
   width: 100%;
   background-color: transparent;
+  /* background-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, transparent 0); */
   color: white;
   padding: 0 60px;
   z-index: 9;
-  transition: 0.125s linear;
+  /* transition: all 0.125s linear; */
 }
 .nav-bar-scrolled {
-  background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(8px);
+  background-color: rgb(0, 0, 0);
+  /* background-image: linear-gradient(90deg, rgb(0, 0, 0) 100%, transparent 0); */
   box-shadow: 0 2.5px 8px 0 rgb(0, 0, 0, 0.5);
 }
 .nav-bar-hamburger{
@@ -98,17 +99,17 @@ img, video {
   position: relative;
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 .item-link a::before {
   content: '';
   background: white;
   display: block;
   position: absolute;
-  bottom: -4px;
+  bottom: -5px;
   left: 0;
   width: 0;
-  height: 2.5px;
-  border-radius: 5px;
+  height: 2px;
   transition: 0.3s ease-in-out;
 }
 a:hover::before {
@@ -140,8 +141,8 @@ a:hover::before {
   z-index: 1;
 }
 .objective-title {
-  font-family: var(--font-heading);
-  font-size: var(--fontSizes-7xl);
+  font-family: var(--font-title);
+  font-size: var(--fontSizes-8xl);
   margin: 0;
   font-weight: 800;
 }
@@ -155,6 +156,7 @@ a:hover::before {
   margin: 25px 0;
   color: #eeeeee;
   line-height: 1.5em;
+  text-align: justify ;
 }
 
 .main-body-banner {
@@ -418,12 +420,13 @@ a:hover::before {
   padding: 50px 20px 20px;
   background-color: #f5f5f5;
   margin-bottom: 25px;
-  box-shadow: 0 5px 5px 0 rgb(224, 224, 224);
+  border-radius: 8px;
+  box-shadow: 0 2.5px 5px 0 rgb(221, 221, 221);
 }
 .faq-box:hover{
-  transform: scale(1.01);
+  transform: scale(1.015);
   transition: 0.25s ease-in-out;
-  box-shadow: 0 10px 10px 0 rgb(193, 193, 193);
+  box-shadow: 0 5px 10px 0 rgb(201, 201, 201);
 }
 .faq-box h3 {
   margin-top: 0;
@@ -585,7 +588,7 @@ a:hover::before {
 }
 .foot-notes .org{
   font-size: var(--fontSizes-4xl);
-  font-family: var(--font-heading);
+  font-family: var(--font-title);
   font-weight: bold;
   color: #f7fafc;
   margin: 0 0 7.5px 0;
