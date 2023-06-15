@@ -48,7 +48,7 @@
     width: 100%;
     background-color: rgba(0, 0, 0);
     color: white;
-    padding: 0 10px;
+    padding: 0 15px;
     z-index: 9;
   }
   .nav-bar-blinds{
@@ -63,6 +63,7 @@
     width: fit-content;
     justify-content: center;
     align-items: center;
+    z-index: 9;
   }
   .nav-bar-logo a {
     width: fit-content;
@@ -79,6 +80,7 @@
     background-color: transparent;
     height: 100%;
     margin-left: auto;
+    z-index: 9;
   }
   .nav-bar-hamburger i{
     transition: 0.2s ease-in-out;
@@ -147,7 +149,7 @@
     display: flex;
     width: 100%;
     flex-flow: column;
-    padding: 70px 10px 0px;
+    padding: 70px 15px 0px;
     justify-content: center;
     z-index: 1;
   }
@@ -208,7 +210,7 @@
     display: block;
     width: 100%;
     height: fit-content;
-    padding: 50px 10px 50px;
+    padding: 50px 15px 50px;
     color: white;
     background-image: url("../res/backdrop/8623.jpg");
     background-size: cover;
@@ -384,7 +386,7 @@
   .faq-container {
     display: flex;
     flex-wrap: wrap;
-    padding: 50px 10px;
+    padding: 50px 15px;
   }
   .faq-title {
     font-family: var(--font-heading);
@@ -453,8 +455,8 @@
     flex-wrap: wrap;
     background-image: url("../res/backdrop/v986-bg-07.jpg");
     background-color: #f7f7f5;
-    background-size: cover;
-    background-position: 60%;
+    background-size: 200%;
+    background-position: top center;
     background-repeat: no-repeat;
   }
   .carbon-neutral-dao > div {
@@ -462,13 +464,13 @@
     width: 100%;
     height: fit-content;
     flex-flow: column;
-    padding: 0 10px 25px;
+    padding: 0 15px 25px;
     justify-content: center;
     align-items: center;
     z-index: 1;
   }
   .carbon-neutral-dao > div:first-of-type{
-    padding: 100px 10px 0;
+    padding: 100px 15px 0;
   }
   .carbon-dao-text h2 {
     margin-top: 0;
@@ -546,10 +548,10 @@
     position: absolute;
   }
   .img-landscape{
-    width: calc(100% - 10px);
+    width: calc(100%);
   }
   .img-portrait{
-    width: calc(60%);
+    width: calc(65%);
   }
   .photo img {
     width: 100%;
@@ -612,10 +614,10 @@
   }
   .footer-body > div:first-of-type {
     order : 1;
-    padding: 20px 20px 20px 10px;
+    padding: 20px 15px 20px 15px;
   }
   .footer-body > div:last-of-type {
-    padding: 50px 10px 20px;
+    padding: 50px 15px 20px;
   }
   .foot-notes .org {
     font-size: var(--fontSizes-4xl);
