@@ -2,9 +2,9 @@ window.onscroll = () => {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop >= 50  || document.documentElement.scrollTop > 50) {
-    document.querySelector(".nav-bar").classList.add("nav-bar-scrolled");
+    document.querySelector(".nav-bar-blinds").classList.add("nav-bar-blinds-on");
   } else {
-    document.querySelector(".nav-bar").classList.remove("nav-bar-scrolled");
+    document.querySelector(".nav-bar-blinds").classList.remove("nav-bar-blinds-on");
   }
 }
 
@@ -72,7 +72,10 @@ function photoClickHandler() {
   
 function scrollToView(view){
   let element = document.getElementById(view);
-  let headerOffset = 100;
+  let headerOffset = 90;
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    headerOffset = 70;
+  }
   let elementPosition = element.getBoundingClientRect().top;
   let offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
