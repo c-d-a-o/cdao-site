@@ -561,7 +561,7 @@ a:hover::before {
   background-size: cover;
   width: 40px;
   height: 40px;
-  top: calc(50% - 200px);
+  top: calc(12%);
   left: calc(50%);
   z-index: 999 !important;
   filter: drop-shadow(2px 2px 2.5px rgba(0,0,0,0.5));
