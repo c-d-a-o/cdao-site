@@ -89,8 +89,8 @@ We expect all contributors to follow the Code of Conduct while participating in 
 If you have any questions or suggestions regarding the CDAO-Site project, please feel free to open an issue or contact the project maintainers:
 
 Maintainers: 
-      [Aman Chandra](github.com/acdevs), 
-      [Chetan Mittal](github.com/ichetanmittal)
+      [Aman Chandra](https://github.com/acdevs), 
+      [Chetan Mittal](https://github.com/ichetanmittal)
       
 We appreciate your interest in the project and your valuable contributions!
 
