@@ -291,7 +291,7 @@ a:hover::before {
   width: calc(100% - 100px);
   height: 100%;
   overflow-x: scroll;
-  scroll-behavior: smooth;
+  scroll-behavior: none;
   scroll-snap-type: x mandatory;
 }
 
