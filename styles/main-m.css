@@ -67,7 +67,7 @@
   }
   .nav-bar-logo a {
     width: fit-content;
-    height: 70%;
+    height: 50%;
   }
   .nav-bar-logo img {
     width: auto;
@@ -212,14 +212,10 @@
     height: fit-content;
     padding: 50px 15px 50px;
     color: white;
-    background-image: url("../res/backdrop/8623.jpg");
     background-size: cover;
     background-position: 10%;
     background-color: rgb(0, 0, 0);
     --events-container-height: 800px;
-  }
-  .events-container video {
-    display: none;
   }
   .events-container div {
     position: relative;
@@ -289,6 +285,20 @@
     flex-wrap: wrap;
     backdrop-filter: blur(2px);
   }
+  .event-card-3{
+    background: radial-gradient(
+      circle at 30% 40%,
+      #59d58b50,
+      #00000095 60%
+    );
+  }
+  .event-card-2{
+    background: radial-gradient(
+      circle at 50% 50%,
+      #0d42be90,
+      #00000095 70%
+    );
+  }
   .event-card-1 {
     background: radial-gradient(
       circle at 25% 35%,
@@ -307,7 +317,6 @@
     flex-flow: column;
     width: -webkit-fill-available;
     padding: 20px 0;
-    overflow: scroll;
   }
   .event-details::-webkit-scrollbar {
     display: none;
@@ -376,10 +385,42 @@
   .feedback-button i{
     padding-left: 10px;
   }
+  .register-button i{
+    padding-left: 10px;
+  }
   .event-card-1 .feedback-button:active{
     background-color: #1f22a8 !important;
     color: #ffffff !important;
   }
+  
+.event-card-3 .register-button{
+  background-color: #1b944a;
+  color: #ffffff;
+}
+.event-card-3 .register-button:active {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.event-card-2 .register-button{
+  background-color: #00b2fe;
+  color: #ffffff;
+}
+.event-card-2 .register-button:active {
+  background-color: #ffffff;
+  color: #000000;
+}
+.event-card-2 .event-details{
+  padding: 25px 40px 25px 0px;
+}
+.event-card-2 .event-details video {
+  position: relative;
+  width: calc(100vw - 30px);
+  height: auto;
+  margin: 20px 0 50px;
+  left: -10px;
+}
+
 
   /* ::::::::::::::::::::::::::::::::::::faqs::::::::::::::::::::::::::::::::::::::::::: */
 
@@ -625,6 +666,9 @@
     font-weight: bold;
     color: #f7fafc;
     margin: 0 0 7.5px 0;
+  }
+  .foot-notes .org img{
+    width: 100px;
   }
   .foot-notes .org-desc {
     font-size: var(--fontSizes-xl);

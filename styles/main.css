@@ -58,6 +58,9 @@ img, video {
   padding: 0 60px;
   z-index: 9;
 }
+/* .nav-bar *{
+  outline: 1px solid red;
+} */
 .nav-bar-blinds{
   position: absolute;
   top: 0;
@@ -86,7 +89,7 @@ img, video {
 }
 .nav-bar-logo a {
   width: fit-content;
-  height: 65%;
+  height: 50%;
 }
 .nav-bar-logo img {
   min-height: 50px;
@@ -152,6 +155,9 @@ a:hover::before {
   margin: 0;
   font-weight: 800;
 }
+/* .objective-title::first-letter{
+  color: #ff0000;
+} */
 .objective-subtitle {
   position: relative;
   font-size: var(--fontSizes-4xl);
@@ -301,6 +307,20 @@ a:hover::before {
   color: #ffffff;
   border-radius: 10px;
 }
+.event-card-3{
+  background: radial-gradient(
+    circle at 30% 50%,
+    #64c7b275,
+    #00000095 50%
+  );
+}
+.event-card-2{
+  background: radial-gradient(
+    circle at 30% 60%,
+    #00b2fe90,
+    #00000095 40%
+  );
+}
 .event-card-1{
   background: radial-gradient(
     circle at 25% 50%,
@@ -363,9 +383,9 @@ a:hover::before {
   border-radius: 50px;;
   border: 1px solid #ffffff;
 }
-.event-card-1 .hastags:hover{
+.event-card .hastags:hover{
   background-color: #ffffff;
-  color: #1f22a8;
+  color: #000000;
 }
 .register-button {
   position: absolute;
@@ -391,6 +411,9 @@ a:hover::before {
 .feedback-button i{
   padding-left: 10px;
 }
+.register-button i{
+  padding-left: 10px;
+}
 .event-card-1 .feedback-button:hover{
   background-color: #1f22a8 !important;
   color: #ffffff !important;
@@ -399,10 +422,41 @@ a:hover::before {
   background-color: #1f22a8;
   color: #ffffff;
 }
-/* .event-card-1 .register-button:hover {
+.event-card-1 .register-button:hover {
   background-color: #ffffff;
   color: #1f22a8;
-} */
+}
+
+.event-card-3 .register-button{
+  background-color: #1b944a;
+  color: #ffffff;
+}
+.event-card-3 .register-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.event-card-2 .register-button{
+  background-color: #00b2fe;
+  color: #ffffff;
+  left: calc(72%) !important;
+}
+.event-card-2 .register-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.event-card-2 .event-details{
+  padding: 25px 40px 25px 0px;
+}
+.event-card-2 .event-details video {
+  position: relative;
+  object-fit: cover;
+  object-position: center left;
+  width: 72%;
+  max-width: 700px;
+  margin: 0;
+  border-radius: 25px;
+}
 
 /* ::::::::::::::::::::::::::::::::::::faqs::::::::::::::::::::::::::::::::::::::::::: */
 
@@ -650,6 +704,9 @@ a:hover::before {
   font-weight: bold;
   color: #f7fafc;
   margin: 0 0 7.5px 0;
+}
+.foot-notes .org img{
+  width: 100px;
 }
 .foot-notes .org-desc{
   font-size: var(--fontSizes-xl);
