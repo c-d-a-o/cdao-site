@@ -15,10 +15,10 @@ const navBarItems = document.querySelector(".nav-bar-items");
 const navBarHam = document.querySelector(".nav-bar-hamburger i");
 
 sliderNextbtn.addEventListener("click", () => {
-    sliderViewContext.scrollLeft += 1000;
+    sliderViewContext.scrollLeft += 500;
 });
 sliderPrevbtn.addEventListener("click", () => {
-    sliderViewContext.scrollLeft -= 1000;
+    sliderViewContext.scrollLeft -= 500;
 });
 
 document.querySelector(".nav-bar-hamburger i").addEventListener("click", (e) => {
