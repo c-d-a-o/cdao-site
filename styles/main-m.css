@@ -303,6 +303,7 @@
     margin-right: -8px;
   }
   .slider-prev i{
+    display: none;
     margin-left: -8px;
   }
   .slider-prev i:active, .slider-next i:active{

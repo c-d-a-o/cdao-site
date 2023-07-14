@@ -10,26 +10,39 @@ function scrollFunction() {
 
 const sliderPrevbtn = document.querySelector(".slider-prev i");
 const sliderNextbtn = document.querySelector(".slider-next i");
+let sliderViewContextNum = 0;
+const sliderViewContextNumMax = document.querySelectorAll(".event-card").length;
 const sliderViewContext = document.querySelector(".view-event-cards");
-const navBarItems = document.querySelector(".nav-bar-items");
-const navBarHam = document.querySelector(".nav-bar-hamburger i");
 
 sliderNextbtn.addEventListener("click", () => {
-    sliderViewContext.scrollLeft += 500;
+  sliderPrevbtn.style.display = "block";
+  sliderViewContext.scrollLeft += 500;
+  if(sliderViewContextNum < sliderViewContextNumMax - 1){
+    sliderViewContextNum++
+    sliderPrevbtn.style.display = "block";
+  };
+  if(sliderViewContextNum === sliderViewContextNumMax - 1) sliderNextbtn.style.display = "none";
 });
 sliderPrevbtn.addEventListener("click", () => {
-    sliderViewContext.scrollLeft -= 500;
+  sliderNextbtn.style.display = "block";
+  sliderViewContext.scrollLeft -= 500;
+  if(sliderViewContextNum > 0){
+    sliderViewContextNum--;
+  }
+  if(sliderViewContextNum === 0) sliderPrevbtn.style.display = "none";
 });
 
+const navBarItems = document.querySelector(".nav-bar-items");
+const navBarHam = document.querySelector(".nav-bar-hamburger i");
 document.querySelector(".nav-bar-hamburger i").addEventListener("click", (e) => {
     navBarItems.classList.toggle("nav-bar-items-active");
     e.target.classList.toggle("nav-bar-hamburger-active");
 });
 document.querySelectorAll(".item-link a").forEach((item) => {
-    item.addEventListener("click", () => {
-        navBarItems.classList.toggle("nav-bar-items-active");
-        navBarHam.classList.toggle("nav-bar-hamburger-active");
-    })
+  item.addEventListener("click", () => {
+    navBarItems.classList.toggle("nav-bar-items-active");
+    navBarHam.classList.toggle("nav-bar-hamburger-active");
+  })
 });
 
 function getRandomArbitrary(min, max) {
