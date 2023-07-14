@@ -43,7 +43,7 @@
   background-color: rgb(45, 119, 255);
   color: white;
   line-height: 25px;
-  font-size: var(--fontSizes-sm);
+  font-size: var(--fontSizes-xs);
   text-align: center;
 }
 body {
