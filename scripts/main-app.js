@@ -1,7 +1,7 @@
 window.onscroll = () => {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop >= 50  || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop > 50  || document.documentElement.scrollTop > 50) {
     document.querySelector(".nav-bar-blinds").classList.add("nav-bar-blinds-on");
   } else {
     document.querySelector(".nav-bar-blinds").classList.remove("nav-bar-blinds-on");
