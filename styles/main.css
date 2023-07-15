@@ -287,9 +287,6 @@ a:hover::before {
   color: #212121;
   border: none;
 }
-.slider-prev i{
-  display: none;
-}
 .slider-view{
   position: relative;
   display: flex;
@@ -509,7 +506,7 @@ a:hover::before {
   padding: 50px 20px 20px;
   background-color: #f5f5f5;
   margin-bottom: 25px;
-  border-radius: 8px;
+  border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 5px 10px #eaeaea;
 }
@@ -821,7 +818,7 @@ a:hover::before {
 .partners-container {
   background-color: #000000;
   color: white;
-  padding: 60px;
+  padding: 40px 60px 60px;
 }
 .partners-title{
   position: relative;

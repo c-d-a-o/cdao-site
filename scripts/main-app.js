@@ -10,26 +10,21 @@ function scrollFunction() {
 
 const sliderPrevbtn = document.querySelector(".slider-prev i");
 const sliderNextbtn = document.querySelector(".slider-next i");
-let sliderViewContextNum = 0;
-const sliderViewContextNumMax = document.querySelectorAll(".event-card").length;
 const sliderViewContext = document.querySelector(".view-event-cards");
+// let sliderViewContextNum = 0;
+// const sliderViewContextNumMax = document.querySelectorAll(".event-card").length;
 
 sliderNextbtn.addEventListener("click", () => {
-  sliderPrevbtn.style.display = "block";
   sliderViewContext.scrollLeft += 500;
-  if(sliderViewContextNum < sliderViewContextNumMax - 1){
-    sliderViewContextNum++
-    sliderPrevbtn.style.display = "block";
-  };
-  if(sliderViewContextNum === sliderViewContextNumMax - 1) sliderNextbtn.style.display = "none";
+  // if(sliderViewContextNum < sliderViewContextNumMax - 1){
+  //   sliderViewContextNum++
+  // };
 });
 sliderPrevbtn.addEventListener("click", () => {
-  sliderNextbtn.style.display = "block";
   sliderViewContext.scrollLeft -= 500;
-  if(sliderViewContextNum > 0){
-    sliderViewContextNum--;
-  }
-  if(sliderViewContextNum === 0) sliderPrevbtn.style.display = "none";
+  // if(sliderViewContextNum > 0){
+  //   sliderViewContextNum--;
+  // }
 });
 
 const navBarItems = document.querySelector(".nav-bar-items");
