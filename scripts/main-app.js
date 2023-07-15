@@ -1,7 +1,7 @@
 window.onscroll = () => {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop >= 50  || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop > 50  || document.documentElement.scrollTop > 50) {
     document.querySelector(".nav-bar-blinds").classList.add("nav-bar-blinds-on");
   } else {
     document.querySelector(".nav-bar-blinds").classList.remove("nav-bar-blinds-on");
@@ -11,25 +11,33 @@ function scrollFunction() {
 const sliderPrevbtn = document.querySelector(".slider-prev i");
 const sliderNextbtn = document.querySelector(".slider-next i");
 const sliderViewContext = document.querySelector(".view-event-cards");
-const navBarItems = document.querySelector(".nav-bar-items");
-const navBarHam = document.querySelector(".nav-bar-hamburger i");
+// let sliderViewContextNum = 0;
+// const sliderViewContextNumMax = document.querySelectorAll(".event-card").length;
 
 sliderNextbtn.addEventListener("click", () => {
-    sliderViewContext.scrollLeft += 500;
+  sliderViewContext.scrollLeft += 500;
+  // if(sliderViewContextNum < sliderViewContextNumMax - 1){
+  //   sliderViewContextNum++
+  // };
 });
 sliderPrevbtn.addEventListener("click", () => {
-    sliderViewContext.scrollLeft -= 500;
+  sliderViewContext.scrollLeft -= 500;
+  // if(sliderViewContextNum > 0){
+  //   sliderViewContextNum--;
+  // }
 });
 
+const navBarItems = document.querySelector(".nav-bar-items");
+const navBarHam = document.querySelector(".nav-bar-hamburger i");
 document.querySelector(".nav-bar-hamburger i").addEventListener("click", (e) => {
     navBarItems.classList.toggle("nav-bar-items-active");
     e.target.classList.toggle("nav-bar-hamburger-active");
 });
 document.querySelectorAll(".item-link a").forEach((item) => {
-    item.addEventListener("click", () => {
-        navBarItems.classList.toggle("nav-bar-items-active");
-        navBarHam.classList.toggle("nav-bar-hamburger-active");
-    })
+  item.addEventListener("click", () => {
+    navBarItems.classList.toggle("nav-bar-items-active");
+    navBarHam.classList.toggle("nav-bar-hamburger-active");
+  })
 });
 
 function getRandomArbitrary(min, max) {

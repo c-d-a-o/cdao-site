@@ -7,13 +7,15 @@
     <meta name="theme-color" content="#000000">
     <link rel="shortcut icon" href="res/brandkit/favicon-logo.png" type="image/x-icon" />
     <title>CDAO | College Decentralised Autonomous Organisation.</title>
-    <script src="https://kit.fontawesome.com/bfc0700fbc.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/bfc0700fbc.js" crossorigin="anonymous"></script> -->
     <!-- 👇🏻 experimental on localhost! -->
-    <!-- <script src="https://kit.fontawesome.com/78929323b4.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/78929323b4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles/main.css" />
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="styles/main-m.css" />
   </head>
   <body>
+
+    <div class="indev-info">We are working hard to bring you the best experience.</div>
 
     <div class="nav-bar">
       <div class="nav-bar-blinds"></div>
@@ -24,10 +26,10 @@
       </div>
       <div class="nav-bar-items">
         <div class="item-link"><a onclick="scrollToView('events')">Events</a></div>
-        <div class="item-link"><a>Governance</a></div>
+        <div class="item-link"><a onclick="scrollToView('partners')">Partners</a></div>
         <div class="item-link"><a onclick="scrollToView('faqs')">FAQs </a></div>
         <div class="item-link"><a onclick="scrollToView('community')">Community</a></div>
-        <div class="item-link"><a>Vote</a></div>
+        <!-- <div class="item-link"><a>Vote</a></div> -->
       </div>
       <div class="nav-bar-hamburger">
         <!-- <i class="fa-solid fa-chevron-down"></i> -->
@@ -127,66 +129,41 @@
 
     <!-- Our Partners -->
 
-    <section id="partners">
-      <h2 class="ourpartners">Our Partners</h2>
-      <ul id="partner-list">
+    <div class="partners-container" id="partners">
+      <h2 class="partners-title highlight-text-dark">Our Partners</h2>
+      <ul class="partner-list">
         <li>
           <div class="partner-info">
-
-            <img src="partners/mdd-logo.jpg" alt="MDD Logo" class="partner-logo">
+            <img src="res/images/partners/mdd-logo.jpg" alt="MDD Logo" class="partner-logo">
             <div class="partner-details">
-              <p class="partner-description"><strong>MDD</strong> : A MoveLang builders community, focused on developer onboarding, education on Aptos_Network ,Pioneering #MoveIndia Student Program.</p>
-              <p class="chapter-lead">Chapter Lead: ARNAV ANAND</p>
-              <!-- <div class="social-media">
-                <a href="https://twitter.com/thisis_arnav" target="_blank" rel="noopener noreferrer">
-                  <img src="twitter-logo.png" alt="Twitter" class="social-icon">
-                </a>
-                <a href="https://linkedin.com/in/johndoe" target="_blank" rel="noopener noreferrer">
-                  <img src="linkedin-logo.png" alt="LinkedIn" class="social-icon">
-                </a>
-              </div> -->
+              <p class="partner-description"><strong>MDD</strong>A MoveLang Builders' community, focused on developer onboarding, education on Aptos Network, pioneering #MoveIndia Student Program.</p>
+              <p class="chapter-lead">Chapter Lead - <a href="https://www.linkedin.com/in/arnav-anand-923232270/" target="_blank">Arnav Anand <i class="fa-brands fa-linkedin" style="padding: 0 2.5px;"></i></a></p>
             </div>
           </div>
         </li>
       
         <li>
           <div class="partner-info">
-            <img src="partners/tph.jpg" alt="TPHLogo" class="partner-logo">
+            <img src="res/images/partners/tph.jpg" alt="TPHLogo" class="partner-logo">
             <div class="partner-details">
-              <p class="partner-description"><strong>The Product House</strong> : Learn, buidl, grow and hang out in the coolest web3 community out there. Built with ❤️ by @theproductfolks</p>
-              <p class="chapter-lead">Chapter Lead: Coming Soon</p>
-              <!-- <div class="social-media">
-                <a href="https://twitter.com/thisis_arnav" target="_blank" rel="noopener noreferrer">
-                  <img src="twitter-logo.png" alt="Twitter" class="social-icon">
-                </a>
-                <a href="https://linkedin.com/in/johndoe" target="_blank" rel="noopener noreferrer">
-                  <img src="linkedin-logo.png" alt="LinkedIn" class="social-icon">
-                </a>
-              </div> -->
+              <p class="partner-description"><strong>The Product House</strong>Learn, build, grow and hang out in the coolest web3 community out there. Built with <i class="fa-solid fa-heart" style="padding: 0 2.5px;"></i> by The Product Folks.</p>
+              <!-- <p class="chapter-lead">Chapter Lead - Coming Soon</p> -->
             </div>
           </div>
         </li>
 
         <li>
           <div class="partner-info">
-            <img src="partners/hyperledger.png" alt="Hyperledger Logo" class="partner-logo">
+            <img src="res/images/partners/hyperledger.png" alt="Hyperledger Logo" class="partner-logo">
             <div class="partner-details">
-              <p class="partner-description"><strong>HYPERLEDGER</strong> : The open global ecosystem for enterprise-grade blockchain technologies.</p>
-              <p class="chapter-lead">Chapter Lead: Coming Soon</p>
-              <!-- <div class="social-media">
-                <a href="https://twitter.com/thisis_arnav" target="_blank" rel="noopener noreferrer">
-                  <img src="twitter-logo.png" alt="Twitter" class="social-icon">
-                </a>
-                <a href="https://linkedin.com/in/johndoe" target="_blank" rel="noopener noreferrer">
-                  <img src="linkedin-logo.png" alt="LinkedIn" class="social-icon">
-                </a>
-              </div> -->
+              <p class="partner-description"><strong>HYPERLEDGER</strong>The open global ecosystem for enterprise-grade blockchain technologies.</p>
+              <!-- <p class="chapter-lead">Chapter Lead - Coming Soon</p> -->
             </div>
           </div>
         </li>
 
       </ul>
-    </section>
+    </div>
   
     <!-- FAQs -->
     <div class="faq-container" id="faqs">
@@ -208,22 +185,22 @@
           <div class="faq-box-backdrop"><i class="fas fa-puzzle-piece"></i></div>
         </div>
         <div class="faq-box">
-          <h3><i class="fas fa-rocket"></i> What benefits does CDAO offer to students?</h3>
+          <h3><i class="fas fa-rocket"></i> What benefits does <u>C</u>DAO offer to students?</h3>
           <p>CDAO offers a platform for students to learn, explore, and experiment with Blockchain and Web3.0 technologies. By participating in our activities, students can enhance their technical skills, network with industry experts, and stay updated on the latest developments in the decentralized space.</p>
           <div class="faq-box-backdrop"><i class="fas fa-rocket"></i></div>
         </div>
         <div class="faq-box">
-          <h3><i class="fas fa-hands-helping"></i> How can students get involved with CDAO?</h3>
+          <h3><i class="fas fa-hands-helping"></i> How can students get involved with <u>C</u>DAO?</h3>
           <p>Students can get involved with CDAO by attending our events, joining our workshops, and participating in collaborative projects. We welcome students from all disciplines and backgrounds who are interested in learning about Blockchain, Web3.0, and decentralized technologies.</p>
           <div class="faq-box-backdrop"><i class="fas fa-hands-helping"></i></div>
         </div>
         <div class="faq-box">
-          <h3><i class="fas fa-globe"></i> How can CDAO contribute to NITJ and its student community?</h3>
+          <h3><i class="fas fa-globe"></i> How can <u>C</u>DAO contribute to NITJ and its student community?</h3>
           <p>CDAO can contribute to the college and student community by organizing educational events, creating networking opportunities with industry professionals, fostering innovation and research projects, and serving as a platform for students to collaborate and share knowledge about Blockchain and Web3.0.</p>
           <div class="faq-box-backdrop"><i class="fas fa-globe"></i></div>
         </div>
         <div class="faq-box">
-          <h3><i class="fas fa-brain"></i> Are there any prerequisites or technical background required to join CDAO?</h3>
+          <h3><i class="fas fa-brain"></i> Are there any prerequisites or technical background required to join <u>C</u>DAO?</h3>
           <p>No specific prerequisites or technical background is required to join CDAO. We welcome students from all disciplines and levels of expertise who have an interest in learning and exploring Blockchain and Web3.0 technologies. Our activities cater to both beginners and those with prior knowledge in the field.</p>
           <div class="faq-box-backdrop"><i class="fas fa-brain"></i></div>
         </div>
