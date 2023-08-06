@@ -225,7 +225,7 @@ a:hover::before {
   height: fit-content;
   padding: 60px;
   color: white;
-  background-image: url("../res/backdrop/v627-aew-41-technologybackground.jpg");
+  background-image: url('https://img.freepik.com/free-vector/black-faded-gradient-background-vector-with-blue-border_53876-125750.jpg');
   background-size: cover;
   background-position: top center;
   background-color: rgb(0, 0, 0);
@@ -323,7 +323,7 @@ a:hover::before {
 .event-card-3{
   background: radial-gradient(
     circle at 30% 50%,
-    #2fe19075,
+    #2f91e175,
     #000000ee 50%
   );
 }
