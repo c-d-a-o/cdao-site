@@ -225,9 +225,10 @@ a:hover::before {
   height: fit-content;
   padding: 60px;
   color: white;
-  background-image: url('https://img.freepik.com/free-vector/black-faded-gradient-background-vector-with-blue-border_53876-125750.jpg');
+  /* background-image: url('https://img.freepik.com/free-vector/black-faded-gradient-background-vector-with-blue-border_53876-125750.jpg'); */
+  background-image: url('https://img.freepik.com/free-vector/abstract-background-with-digital-cyber-particles-design_1048-15577.jpg?w=900&t=st=1693147716~exp=1693148316~hmac=50e0e2eebd8cab5820a440b629145d46d9628d166a450d1bf0a7090e94322bc7');
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   background-color: rgb(0, 0, 0);
   --events-container-height: 800px;
 }
@@ -320,25 +321,32 @@ a:hover::before {
   color: #ffffff;
   border-radius: 25px;
 }
+.event-card-4{
+  background: radial-gradient(
+    circle at 30% 50%,
+    #78398baa,
+    #000000ee 40%
+  );
+}
 .event-card-3{
   background: radial-gradient(
     circle at 30% 50%,
-    #2f91e175,
-    #000000ee 50%
+    #010c52aa,
+    #000000ee 40%
   );
 }
 .event-card-2{
   background: radial-gradient(
     circle at 30% 60%,
-    #00b2fe90,
+    #00b2feaa,
     #000000ee 40%
   );
 }
 .event-card-1{
   background: radial-gradient(
     circle at 25% 50%,
-    #1f21a880,
-    #040411ee 60%
+    #1f21a8aa,
+    #040411ee 40%
   );
 }
 .event-thumbnail{
@@ -348,6 +356,7 @@ a:hover::before {
   height: 100%;
 }
 .event-details {
+  position: relative;
   display: flex;
   flex-flow: column;
   width: -webkit-fill-available;
@@ -360,7 +369,6 @@ a:hover::before {
 .event-thumbnail img {
   height: 100%;
   object-fit: cover;
-  /* border-radius: 5px 0 0 5px; */
   border-radius: 25px;
 }
 .event-details h3 {
@@ -400,17 +408,21 @@ a:hover::before {
   background-color: #ffffff;
   color: #000000;
 }
+.event-btns{
+  padding: 0;
+  margin: 25px 0 0;
+  z-index: 1;
+}
 .register-button {
-  position: absolute;
+  display: inline-block;
   padding: 0 25px;
   height: 50px;
   width: fit-content;
   line-height: 50px;
   font-size: var(--fontSizes-lg);
   text-decoration: none;
-  bottom: 25px !important;
   border-radius: 25px;
-  z-index: 1;
+  margin-right: 10px;
 }
 .register-closed{
   background-color: transparent !important;
@@ -440,19 +452,25 @@ a:hover::before {
   background-color: #ffffff;
   color: #1f22a8;
 }
-
-.event-card-3 .register-button{
-  background-color: #1b944a;
+.event-card-4 .register-button{
+  background-color: #be5bde;
   color: #ffffff;
-  box-shadow: 0 10px 50px #1b944a9f;
+  box-shadow: 0 10px 50px #be5bde9f;
+}
+.event-card-4 .register-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.event-card-3 .register-button{
+  background-color: #43a6ff;
+  color: #ffffff;
+  box-shadow: 0 10px 50px #43a6ff9f;
 }
 .event-card-3 .register-button:hover {
   background-color: #ffffff;
   color: #000000;
 }
-
 .event-card-2 .register-button{
-  /* background-color: #00b2fe; */
   background-color: #00a5eb;
   color: #ffffff;
   left: calc(72%) !important;
@@ -494,21 +512,20 @@ a:hover::before {
   flex-basis: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   flex-wrap: wrap;
 }
 .faq-box {
   position: relative;
   cursor: default;
-  min-height: 250px;
+  min-height: 300px;
   height: fit-content;
-  flex-basis: calc(50% - 12.5px);
-  padding: 50px 20px 20px;
+  flex-basis: calc(50% - 15px);
+  padding: 50px;
   background-color: #f5f5f5;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 5px 10px #eaeaea;
 }
 .faq-box:hover .faq-box-backdrop{
   transform: scale(1.25);
@@ -519,16 +536,16 @@ a:hover::before {
 }
 .faq-box h3 {
   margin-top: 0;
-  font-size: var(--fontSizes-xl);
+  font-size: var(--fontSizes-2xl);
   word-spacing: 2.5px;
 }
 .faq-box h3 > i{
-  font-size: var(--fontSizes-2xl);
+  font-size: var(--fontSizes-3xl);
   margin: 5px 5px 5px 0;
 }
 .faq-box p {
   margin-bottom: 0;
-  font-size: var(--fontSizes-sm);
+  font-size: var(--fontSizes-md);
   word-spacing: 2.5px;
   line-height: 1.5em;
   text-overflow: ellipsis;
@@ -859,7 +876,7 @@ a:hover::before {
   box-shadow: 100px -100px 100px #dd8d66, -100px 50px 100px #db477c, 50px 50px 100px #2f2675;
 }
 .partner-list li:nth-of-type(3) .partner-logo{
-  box-shadow: 50px -50px 500px #f3241c;
+  box-shadow: 80px -80px 150px #f3231cab;
 }
 .partner-details {
   flex-grow: 1;
