@@ -859,7 +859,7 @@ a:hover::before {
   box-shadow: 100px -100px 100px #dd8d66, -100px 50px 100px #db477c, 50px 50px 100px #2f2675;
 }
 .partner-list li:nth-of-type(3) .partner-logo{
-  box-shadow: 50px -50px 500px #4297ab, -50px 50px 500px #2e8bc4;
+  box-shadow: 50px -50px 500px #f3241c;
 }
 .partner-details {
   flex-grow: 1;
