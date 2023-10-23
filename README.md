@@ -90,8 +90,8 @@ If you have any questions or suggestions regarding the CDAO-Site project, please
 
 Maintainers: 
       [Aman Chandra](https://github.com/acdevs), 
-      [Chetan Mittal](https://github.com/ichetanmittal)
-      [Arnav Anand](https://github.com/capy-on-caffeine),
+      [Chetan Mittal](https://github.com/ichetanmittal), 
+      [Arnav Anand](https://github.com/capy-on-caffeine)
       
 We appreciate your interest in the project and your valuable contributions!
 
